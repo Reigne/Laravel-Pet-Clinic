@@ -1,0 +1,153 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body{
+  background: rgb(248, 249, 252);
+  /*font-family: Arial;*/
+   font-family: 'Muli', sans-serif;
+        /*letter-spacing: -.003em;*/
+        /*font-size: 12px;*/
+
+}
+
+nav{
+    margin-bottom: 40px;
+}
+
+.navbar-custom {
+    background-color: rgb(68, 106, 216);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 10px 10px 0 rgba(0, 0, 0, 0.01);
+    font-family: 'Quicksand', sans-serif;
+    /*color: white;*/
+        }
+
+.container .jumbotron {
+    border-radius: 6px ;
+    padding: 30px;
+    background: rgb(248, 249, 252);
+    margin: auto;
+    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.1),  1px 3px 3px 3px rgba(0, 0, 0, 0.01);
+    height: 100%;
+    width: 100%;
+ /*   padding-left: : 20%;
+      padding-right: 20%;*/
+}
+
+.jumbortron-fluid {
+    padding-top: 0px;
+    padding-bottom:0px;
+    height:560px;
+}
+.navbar-brand {
+    float: none;
+    padding: 8px;
+}
+.navbar-center {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    height:100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
